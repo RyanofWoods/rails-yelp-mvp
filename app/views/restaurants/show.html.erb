@@ -4,3 +4,7 @@
   <li><%= @restaurant.phone_number %></li>
   <li><%= @restaurant.category %></li>
 </ul>
+
+<hr>
+
+<%= link_to "Leave a review", new_restaurant_review_path(@restaurant) %>
