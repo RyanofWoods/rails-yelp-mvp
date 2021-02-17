@@ -12,6 +12,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-light mb-5">
+      <div class="container-fluid">
+        <%= link_to "Restaurants", restaurants_path %>
+        <%= link_to "New Restaurant", new_restaurant_path %>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
