@@ -1,8 +1,10 @@
 <ul>
   <% @restaurants.each do |restaurant| %>
-    <li>
-      <%= restaurant.name %> - 
-      <%= restaurant.category %>
-    </li>
-  <% end %>
+    <%= link_to(restaurant_path(restaurant)) do %>
+      <li>
+        <%= restaurant.name %> - 
+        <%= restaurant.category %>
+      </li>
+    <% end %>
+<% end %>
 </ul>
